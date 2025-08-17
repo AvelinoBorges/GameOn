@@ -226,6 +226,43 @@ input {
 .formData[data-error-visible="true"] .text-control {
   border: 2px solid #e54858;
 }
+
+/* Styles pour le message de succès */
+.success-message {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.success-message h2 {
+  color: #279e7a;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.success-message p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* Amélioration de l'accessibilité et de l'UX */
+.modal-btn:focus,
+.btn-submit:focus,
+.btn-signup:focus {
+  outline: 2px solid #279e7a;
+  outline-offset: 2px;
+}
+
+.text-control:focus {
+  border: 2px solid #279e7a;
+  outline: none;
+}
+
+/* Amélioration du style des messages d'erreur */
+.formData[data-error-visible="true"]::after {
+  font-weight: 500;
+  font-size: 14px;
+}
 /* 
 input[data-error]::after {
     content: attr(data-error);
